@@ -1,6 +1,6 @@
 # DockURSim
 
-## URSim (Universal Robots Simulator) Docker Container with Browser Interface
+## A URSim (Universal Robots Simulator) Docker Container with a Browser Accessible Interface
 
 Runs URSim in a docker container with the Interface that can be accessed via a browser.
 
