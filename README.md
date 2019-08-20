@@ -2,7 +2,7 @@
 
 ## A URSim (Universal Robots Simulator) Docker Container with a Browser Accessible Interface
 
-Runs URSim in a docker container with the Interface that can be accessed via a browser.
+Runs URSim in a docker container with the Polyscope Interface accessible via a browser.
 
 This is a suitable alternative to using the URSim virtual machine image on windows.
 
