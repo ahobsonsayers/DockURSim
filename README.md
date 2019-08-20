@@ -6,6 +6,8 @@ Runs URSim in a docker container with the Interface that can be accessed via a b
 
 This is a suitable alternative to using the URSim virtual machine image on windows.
 
+**Current URSim Version: 5.4.2.76197**
+
 ## Example Usage
 
 First create volume to store robot configuration.
