@@ -20,7 +20,7 @@ Start URSim with an UR5 robot and all interface ports exposed.
 
 ```bash
 docker run -d \
-    --name="ursim" \
+    --name="dockursim" \
     -e ROBOT_MODEL=UR5 \
     -p 8080:8080 \
     -p 29999:29999 \
