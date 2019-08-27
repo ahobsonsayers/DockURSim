@@ -13,7 +13,7 @@ This is a suitable alternative to using the URSim virtual machine image on windo
 First create volume to store robot configuration.
 
 ```bash
-docker volume create ursim
+docker volume create dockursim
 ```
 
 Start URSim with an UR5 robot and all interface ports exposed.
@@ -26,9 +26,9 @@ docker run -d \
     -p 29999:29999 \
     -p 30001-30004:30001-30004 \
     -v /path/to/mount/program/folder:/programs \
-    -v ursim:/ursim \
+    -v dockursim:/ursim \
     --privileged \
-    arranhs/ursim:latest
+    arranhs/dockursim:latest
 ```
 
 The Universal Robot Interface can now be accessed at <http://localhost:8080>.
