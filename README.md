@@ -31,7 +31,7 @@ docker run -d \
     arranhs/dockursim:latest
 ```
 
-The Universal Robot Interface can now be accessed at <http://localhost:8080>.
+The Universal Robot Interface can now be accessed at http://localhost:8080.
 
 **Ctrl-Alt-Shft** will open a menu that allows changing input options, as well as controlling the clipboard.
 
