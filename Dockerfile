@@ -5,6 +5,7 @@ ARG BUILD_DATE="15/08/19"
 ARG VERSION="5.4.2.76197"
 LABEL build_version="URSim Version: ${VERSION} Build Date: ${BUILD_DATE}"
 LABEL maintainer="Arran Hobson Sayers"
+LABEL MAINTAINER="Arran Hobson Sayers"
 ENV APPNAME="URSim"
 
 # Set Timezone
@@ -50,9 +51,6 @@ RUN \
     cd /ursim && \
     # Make URControl and all sh files executable
     chmod +x ./*.sh ./URControl && \
-    #
-    # link /programs to programs directory in /ursim
-    ln -s /ursim/programs /programs && \
     #
     # Stop install of unnecessary packages and install required ones quietly
     sed -i 's|apt-get -y install|apt-get -qy install --no-install-recommends|g' ./install.sh && \
