@@ -46,6 +46,8 @@ Container is configured using parameters passed at runtime.
 | :-------------------: | ------------------------------------------------------------------------------------------ |
 |  `-e ROBOT_TYPE=UR5`  | Specify robot model to use in URSim. Valid options are UR3, UR5 and UR10. Defaults to UR5. |
 | `-e TZ=Europe/London` | Specify a timezone to use e.g. Europe/London                                               |
+|    `-e PUID=1000`     | Set UserID                                                                                 |
+|    `-e PGID=1000`     | Set GroupID                                                                                |
 |      `-v /ursim`      | The URSim application directory                                                            |
 |    `-v /programs`     | The UR programs directory. This is accessible within the robot interface                   |
 |       `-p 8080`       | Allows HTTP access to the robot interface. (Required for Browser Viewing)                  |
