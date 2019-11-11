@@ -28,6 +28,7 @@ docker run -d \
     -v /path/to/mount/program/folder:/ursim/programs \
     -v dockursim:/ursim \
     --privileged \
+    --cpus=1 \
     arranhs/dockursim:latest
 ```
 
@@ -37,6 +38,8 @@ The Universal Robot Interface can now be accessed at http://localhost:8080.
 
 **NOTE!** This container requires running with ```--privileged``` set due to pthread spawn issues that couldnt be solved in any other way. This has security implications so DO NOT expose this container to the internet without doing your due diligence first.
 **Use this container at your own risk**.
+
+**NOTE Number 2!** I highly recommend running this container with the ```--cpus=1``` option as the container seems to use all available machine resources otherwise and this will likely cause your simulator container (and possibly your computer) to become unresponsive or slow.
 
 ## Parameters
 
